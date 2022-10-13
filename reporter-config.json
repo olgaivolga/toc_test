@@ -1,0 +1,9 @@
+{
+    "reporterEnabled": "spec,mocha-junit-reporter",
+    "mochaJunitReporterReporterOptions": {
+      "mochaFile": "cypress/results/report-[hash].xml",
+      "testCaseSwitchClassnameAndName": true,
+      "testsuitesTitle": "Cypress Mocha",
+      "rootSuiteTitle": "TOC Tests"
+    }
+}

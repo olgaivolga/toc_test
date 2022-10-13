@@ -1,0 +1,41 @@
+{
+  "Getting started": [
+    "Accessibility",
+    "IntelliJ IDEA overview",
+    "Installation guide",
+    "Create your first Java application",
+    "Learn IDE features"
+  ],
+  "IntelliJ IDEA overview": [
+    "User interface",
+    "Pro tips",
+    "Support and assistance"
+  ],
+  "rootTitles": [
+    "Getting started", 
+    "IDE configuration",
+    "Project configuration",
+    "Write and edit source code",
+    "Compilation and building",
+    "Running",
+    "Debugging",
+    "Deployment",
+    "Testing",
+    "Analysis",
+    "Version control",
+    "Remote development",
+    "Integrated tools",
+    "Kotlin",
+    "Scala",
+    "Groovy",
+    "Android", 
+    "JVM frameworks", 
+    "Non-JVM technologies", 
+    "Reference"
+  ],
+  "rootArticles": [
+    { "toc": "Getting started", "article": "Getting started"},
+    { "toc": "IDE configuration", "article": "Configuring the IDE"},
+    { "toc": "Reference", "article": "Run IntelliJ\u00a0IDEA for the first time"}
+  ]
+}
