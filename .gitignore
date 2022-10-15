@@ -3,4 +3,6 @@ cypress/videos
 cypress/screenshots
 cypress/results
 results
+cypress-visual-screenshots/comparison/
+cypress-visual-screenshots/diff/
 .DS_Store
