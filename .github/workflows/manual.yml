@@ -18,5 +18,4 @@ jobs:
           name: screenshots
           path: |
             cypress/screenshots/
-            cypress/cypress-visual-screenshots/comparison
-            cypress/cypress-visual-screenshots/diff
+            cypress/cypress-visual-screenshots/
