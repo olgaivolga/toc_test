@@ -26,7 +26,7 @@ describe('Test TOC items on page run-for-the-first-time.html', () => {
       });
 
       it(`${test.toc} navigates to ${test.article} page `, () => {
-        cy.clickTocItem(test.toc).click({ force: true });
+        cy.get(ui.tocListItem(test.toc)).click();
         cy.get(ui.tocArticleTitle).should('have.text', test.article);
       });
     });
