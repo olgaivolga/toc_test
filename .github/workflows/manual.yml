@@ -18,4 +18,4 @@ jobs:
           name: screenshots
           path: |
             cypress/screenshots/
-            cypress/cypress-visual-screenshots/
+            cypress-visual-screenshots/
