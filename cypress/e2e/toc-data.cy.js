@@ -11,7 +11,7 @@ describe('Test TOC items on page run-for-the-first-time.html', () => {
   const titles = testData.rootTitles;
 
   it('The list of root level items is correct', () => {
-    cy.collapseTocItem('Getting_started');
+    cy.get(ui.tocItemArrow('Getting started')).click();
     cy.getTocRootList().then((items) => {
       expect(items).to.have.same.members(titles);
     });

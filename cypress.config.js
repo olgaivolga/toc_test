@@ -6,7 +6,7 @@ module.exports = defineConfig({
   reporterOptions: {
     configFile: 'reporter-config.json',
   },
-  video: true,
+  video: false,
   videoUploadOnPasses: false,
   chromeWebSecurity: false,
   e2e: {

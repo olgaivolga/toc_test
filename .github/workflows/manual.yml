@@ -12,8 +12,11 @@ jobs:
           browser: chrome
           headless: true
           config: baseUrl=https://www.jetbrains.com/help/idea/
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         if: failure()
         with:
           name: screenshots
-          path: cypress/screenshots/
+          path: |
+            cypress/screenshots/
+            cypress/cypress-visual-screenshots/comparison
+            cypress/cypress-visual-screenshots/diff

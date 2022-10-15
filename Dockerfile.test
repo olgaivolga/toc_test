@@ -4,6 +4,6 @@ COPY package.json .
 COPY package-lock.json .
 RUN npm ci
 COPY cypress/ cypress/
+COPY cypress-visual-screenshots/ cypress-visual-screenshots/
 COPY cypress.config.js .
 COPY reporter-config.json .
-

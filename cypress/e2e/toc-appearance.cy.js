@@ -1,5 +1,8 @@
 import ui from '../support/ui';
 
+const tolerance = 0;
+const retryOptions = { limit: 3, delay: 500 };
+
 describe('Test TOC appearance on page run-for-the-first-time.html', () => {
   describe('Wider window', () => {
     beforeEach(() => {
@@ -21,7 +24,7 @@ describe('Test TOC appearance on page run-for-the-first-time.html', () => {
       cy.get(ui.tocListItem('Accessibility')).then(($element) => {
         // eslint-disable-next-line no-param-reassign
         $element[0].textContent = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
-        cy.compareSnapshot('very-long-word', 0.2, { limit: 3, delay: 500 });
+        cy.compareSnapshot('very-long-word', tolerance, retryOptions);
       });
     });
 
@@ -29,7 +32,7 @@ describe('Test TOC appearance on page run-for-the-first-time.html', () => {
       cy.get(ui.tocListItem('Accessibility')).then(($element) => {
         // eslint-disable-next-line no-param-reassign
         $element[0].textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
-        cy.compareSnapshot('very-long-sentence', 0.2, { limit: 3, delay: 500 });
+        cy.compareSnapshot('very-long-sentence', tolerance, retryOptions);
       });
     });
 
@@ -37,7 +40,7 @@ describe('Test TOC appearance on page run-for-the-first-time.html', () => {
       cy.get(ui.tocListItem('Accessibility')).then(($element) => {
         // eslint-disable-next-line no-param-reassign
         $element[0].textContent = '* ? / \\ | < > , . ( ) [ ] { } ; : ‘ “ ! @ # $ % ^ &';
-        cy.compareSnapshot('special-chars', 0.2, { limit: 3, delay: 500 });
+        cy.compareSnapshot('special-chars', tolerance, retryOptions);
       });
     });
   });
