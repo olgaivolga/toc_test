@@ -11,5 +11,4 @@ services:
       - ./cypress/results:/cypress/results
       - ./cypress/screenshots:/cypress/screenshots
       - ./cypress/videos:/cypress/videos
-      - ./cypress-visual-screenshots/comparison:/cypress-visual-screenshots/comparison
-      - ./cypress-visual-screenshots/diff:/cypress-visual-screenshots/diff
+      - ./cypress-visual-screenshots:/cypress-visual-screenshots
