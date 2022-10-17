@@ -1,7 +1,8 @@
 import ui from '../support/ui';
 
-// change tolerance to 0 to make tests fail
-const tolerance = 0;
+// change tolerance to 0 to make visual tests fail
+// comparison results are located in cypress-visual-screenshots/
+const tolerance = 0.8;
 const retryOptions = { limit: 3, delay: 500 };
 
 describe('Test TOC appearance on page run-for-the-first-time.html', () => {
