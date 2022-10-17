@@ -1,18 +1,4 @@
 {
-  "subItems": {
-    "Getting started": [
-      "Accessibility",
-      "IntelliJ IDEA overview",
-      "Installation guide",
-      "Create your first Java application",
-      "Learn IDE features"
-    ],
-    "IntelliJ IDEA overview": [
-      "User interface",
-      "Pro tips",
-      "Support and assistance"
-    ]
-  },
   "rootTitles": [
     "Getting started", 
     "IDE configuration",
@@ -35,9 +21,42 @@
     "Non-JVM technologies", 
     "Reference"
   ],
-  "rootArticles": [
-    { "toc": "Getting started", "article": "Getting started"},
-    { "toc": "IDE configuration", "article": "Configuring the IDE"},
-    { "toc": "Reference", "article": "Run IntelliJ\u00a0IDEA for the first time"}
+  "rootTitlesDetailes": [
+    {
+      "toc": "Getting started",
+      "article": "Getting started",
+      "subItems": [
+        "Accessibility",
+        "IntelliJ\u00a0IDEA overview",
+        "Installation guide",
+        "Create your first Java application",
+        "Learn IDE features"
+      ]
+    },
+    {
+      "toc": "IDE configuration",
+      "article": "Configuring the IDE",
+      "subItems": [
+        "IDE appearance",
+        "Colors and fonts",
+        "Notifications",
+        "Path variables",
+        "Share IDE settings",
+        "Advanced configuration"
+      ]
+    },
+    {
+      "toc": "Reference",
+      "article": "Run IntelliJ\u00a0IDEA for the first time",
+      "subItems": [
+        "Tool windows reference",
+        "Dialogs",
+        "Settings/Preferences",
+        "Project Structure dialog",
+        "Icon reference",
+        "Built-in IDE macros",
+        "Regular expression syntax reference"
+      ]
+    }
   ]
 }

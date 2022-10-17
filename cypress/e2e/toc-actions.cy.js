@@ -43,8 +43,4 @@ describe('Test TOC behavior', () => {
       .scrollIntoView()
       .should('be.visible');
   });
-
-  it.skip('Failed test', () => {
-    cy.get('[data-test="header-hamburger"]');
-  });
 });

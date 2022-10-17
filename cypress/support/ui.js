@@ -2,7 +2,6 @@ export default {
   tocMenuButton: '[data-test="header-hamburger"]',
   tocMenuClose: '[data-test="icon-close"]',
   tocRoot: '[data-test="toc"]',
-  tocArticleBlock: '[data-test="app__article"]',
   tocArticleTitle: '[data-test="starting-page-title"],h1 > .article__header > .article__title',
   tocListItems: '[data-test="internal-link toc-item"],[data-test="toc-item"]',
   tocListItem: (name) => `[data-test="internal-link toc-item"]:contains(${name}),
